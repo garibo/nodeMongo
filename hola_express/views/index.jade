@@ -1,0 +1,7 @@
+html
+	head
+		title Mi primera pagina con jade
+	body
+		- var arreglo = [1,2,3,4,5];
+		- for (var i = arreglo.length - 1; i >= 0; i--)
+			p!= "<h1>"+arreglo[i]+"</h1>"
