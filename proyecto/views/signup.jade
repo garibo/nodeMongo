@@ -1,6 +1,6 @@
 extends ./layout.jade
 block contenido
-	form(action="/sessions",method="POST")
+	form(action="/users",method="POST")
 		div(class="form-group")
 			label(for="email") Email
 			input(type="text", name="email",placeholder="Email",id="email", class="form-control")
@@ -8,6 +8,14 @@ block contenido
 		div(class="form-group")
 			label(for="password") Password
 			input(type="password", name="password",placeholder="Password",id="password", class="form-control")
+
+		div(class="form-group")
+			label(for="password") Confirma tu contraseña
+			input(type="password", name="password_confirmation",placeholder="Confirma contraseña",id="password", class="form-control")
+
+		div(class="form-group")
+			label(for="username") Username
+			input(type="text", name="username",placeholder="Nombre de usuario",id="username", class="form-control")
 
 		div
 			input(type="submit", value="Iniciar sesion", class="btn btn-info")
