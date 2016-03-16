@@ -1,4 +1,4 @@
-extends ./layout.jade
+extends ../layout.jade
 block contenido
 	form(action="/sessions",method="POST")
 		div(class="form-group")
@@ -11,5 +11,7 @@ block contenido
 
 		div
 			input(type="submit", value="Iniciar sesion", class="btn btn-info")
+
+	p Hola #{user.email}
 
 
